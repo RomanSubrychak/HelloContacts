@@ -32,6 +32,14 @@ class ViewController: UIViewController {
 		} else {
 			retrieveContacts(fromStore: store)
 		}
+		
+		navigationItem.rightBarButtonItem = editButtonItem
+	}
+	
+	override func setEditing(_ editing: Bool, animated: Bool) {
+		super.setEditing(editing, animated: animated)
+		
+		tableView.setEditing(editing, animated: animated)
 	}
 	
 	
@@ -97,6 +105,11 @@ extension ViewController: UITableViewDelegate {
 			tableView.deleteRows(at: [indexPath], with: .fade)
 			tableView.endUpdates()
 		}
+	}
+	
+	func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+		let contact = contacts.remove(at: sourceIndexPath.row)
+		contacts.insert(contact, at: destinationIndexPath.row)
 	}
 }
 
