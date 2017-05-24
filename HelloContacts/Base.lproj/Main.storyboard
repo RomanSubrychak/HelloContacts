@@ -32,29 +32,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSO-L6-T38">
-                                                    <rect key="frame" x="335" y="3" width="37" height="37"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="37" id="lvv-EW-XQf"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yF-il-i3P">
-                                                    <rect key="frame" x="8" y="11" width="319" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="PJ6-Hh-RCq"/>
-                                                        <constraint firstAttribute="width" constant="319" id="TnU-dW-NX5"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="8" y="11" width="314" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSO-L6-T38">
+                                                    <rect key="frame" x="330" y="3" width="37" height="37"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37" id="bRn-ng-Tbc"/>
+                                                        <constraint firstAttribute="width" constant="37" id="c47-v8-uBm"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="8yF-il-i3P" firstAttribute="top" secondItem="E45-X3-pDt" secondAttribute="top" constant="11" id="Uig-aw-ecB"/>
-                                                <constraint firstItem="eSO-L6-T38" firstAttribute="leading" secondItem="8yF-il-i3P" secondAttribute="trailing" constant="8" id="VjK-gj-gC6"/>
-                                                <constraint firstItem="8yF-il-i3P" firstAttribute="leading" secondItem="E45-X3-pDt" secondAttribute="leading" constant="8" id="hcN-8R-KXn"/>
-                                                <constraint firstAttribute="trailing" secondItem="eSO-L6-T38" secondAttribute="trailing" constant="3" id="ndF-mc-vBA"/>
-                                                <constraint firstItem="eSO-L6-T38" firstAttribute="top" secondItem="E45-X3-pDt" secondAttribute="top" constant="3" id="rvz-31-qdm"/>
+                                                <constraint firstItem="eSO-L6-T38" firstAttribute="top" secondItem="E45-X3-pDt" secondAttribute="top" constant="3" id="HcD-h6-gC9"/>
+                                                <constraint firstAttribute="trailing" secondItem="eSO-L6-T38" secondAttribute="trailing" constant="8" id="LAr-Me-4tJ"/>
+                                                <constraint firstItem="8yF-il-i3P" firstAttribute="leading" secondItem="E45-X3-pDt" secondAttribute="leading" constant="8" id="MM4-oE-Su9"/>
+                                                <constraint firstItem="eSO-L6-T38" firstAttribute="leading" secondItem="8yF-il-i3P" secondAttribute="trailing" constant="8" id="TmS-RQ-bzx"/>
+                                                <constraint firstItem="8yF-il-i3P" firstAttribute="top" secondItem="E45-X3-pDt" secondAttribute="top" constant="11" id="WZg-p0-Ska"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

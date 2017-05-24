@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 		tableView.dataSource = self
 		
 		let store = CNContactStore()
+		
 		if CNContactStore.authorizationStatus(for: .contacts) == .notDetermined {
 			store.requestAccess(for: .contacts, completionHandler: {
 				[weak self] authorized, error in

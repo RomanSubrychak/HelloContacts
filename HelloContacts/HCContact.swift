@@ -27,7 +27,7 @@ class HCContact {
 	}
 	
 	func fetchImageIfNeeded() {
-		if let imageData = contact.imageData, contactImage == nil {
+		if contactImage == nil, let imageData = contact.imageData {
 			contactImage = UIImage(data: imageData)
 		}
 	}
