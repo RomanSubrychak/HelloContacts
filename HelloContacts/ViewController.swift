@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 		
 		tableView.delegate = self
 		tableView.dataSource = self
+		tableView.prefetchDataSource = self
 		
 		let store = CNContactStore()
 		
